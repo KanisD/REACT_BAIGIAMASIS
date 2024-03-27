@@ -1,0 +1,127 @@
+{
+  "users": [
+    {
+      "id": "0",
+      "userName": "MrAdmin",
+      "password": "$2a$08$adKDmja0RQamK08GpqX1eugwnxRXiwc7sB0dI/gb5sTyQTQTBqUg6",
+      "passwordNoHash": "darNeHashintas0",
+      "role": "admin"
+    },
+    {
+      "id": "1",
+      "userName": "Edd",
+      "password": "$2a$08$7mCkD1B0rrseIn.hlrU.PuX99X4YDyo.eT1J7GFyiGKeqXmkWA9AW",
+      "passwordNoHash": "darNeHashintas123",
+      "role": "user"
+    },
+    {
+      "id": "670a432b-ffbf-40dc-919c-7479b2d4a005",
+      "userName": "Plačiakelnis",
+      "password": "$2a$08$Q/knWERPIcs3avnrWfkdluY/y57QR7vvmEqkthm49YVelFwQq.rZW",
+      "passwordNoHash": "mySnailGarry123@",
+      "role": "user"
+    },
+    {
+      "id": "743dd40e-f976-4124-a24f-62500bbab1b9",
+      "userName": "PetrasDidysis",
+      "password": "$2a$08$QuB3GA256QHPcPybV2OfcuuM5wyPUuuu7e9ELX9bZlQbRE/FRZj1u",
+      "passwordNoHash": "slaptasPass123@",
+      "role": "user"
+    },
+    {
+      "id": "7aa965a3-c840-4dee-aaf8-653135b015d3",
+      "userName": "labas",
+      "password": "$2a$08$68ywblywXdrk6WoY6gPKtOG9IMqdNQJVh6mNdYYTE2IDKUG4.8aZq",
+      "passwordNoHash": "Zxcsqwe1!",
+      "role": "user"
+    }
+  ],
+  "cards": [
+    {
+      "id": "0",
+      "userId": "1",
+      "title": "Title0",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, iusto."
+    },
+    {
+      "id": "2",
+      "userId": "0",
+      "title": "Title2",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, iusto.",
+      "comments": [
+        {
+          "id": "0",
+          "authorId": "0",
+          "text": "That's the smartest thing I've seen today."
+        },
+        {
+          "id": "1",
+          "authorId": "1",
+          "text": "Is that Latin?"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "userId": "1",
+      "title": "Title3",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, iusto."
+    },
+    {
+      "id": "e3781789-2988-48f0-8423-ba7ec3acab19",
+      "userId": "670a432b-ffbf-40dc-919c-7479b2d4a005",
+      "title": "Jelly Fish Hunting",
+      "description": "It's super fun!!!",
+      "comments": [
+        {
+          "text": "What equipment do you need to do that?",
+          "id": "f38b2262-cbae-41a7-a33c-2be8bc46227a",
+          "authorId": "0"
+        }
+      ]
+    },
+    {
+      "id": "6608bb05-29f2-4687-985a-31066599491b",
+      "userId": "1",
+      "title": "hihihaha",
+      "description": "super not fun\n"
+    },
+    {
+      "id": "df3b4a1c-2881-433e-adf7-09ec971b72cc",
+      "userId": "0",
+      "title": "Nauja korta",
+      "description": "All hail admins",
+      "comments": [
+        {
+          "id": "0",
+          "authorId": "0",
+          "text": "Yes, very smart idea"
+        },
+        {
+          "id": "1",
+          "authorId": "670a432b-ffbf-40dc-919c-7479b2d4a005",
+          "text": "NOOOO!!! Fight the system!!!"
+        }
+      ]
+    },
+    {
+      "id": "5931d1fd-ab34-4a07-8f86-025a8b89abc7",
+      "userId": "0",
+      "title": "Naujas",
+      "description": "kazkas nutiko kazkur?",
+      "comments": [
+        {
+          "text": "naujas comm",
+          "id": "5e1106ed-b40f-405c-96d3-abac8d52196c",
+          "authorId": "0"
+        }
+      ]
+    },
+    {
+      "id": "04a446ca-c846-4c4b-9e4f-4f4e4302f778",
+      "userId": "38053a68-a6cb-456a-9d21-60aefb1f1235",
+      "title": "zXZxZXz",
+      "description": "ZXZXZX"
+    }
+  ]
+}
