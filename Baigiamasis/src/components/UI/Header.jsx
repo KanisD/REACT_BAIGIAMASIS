@@ -84,10 +84,41 @@ const Header = () => {
           <li>
             <NavLink to='/'>Home</NavLink>
           </li>
-         
+          <li>
+            <NavLink to='/cards/allCards'>Cards</NavLink>
+          </li>
         </ul>
       </nav>
-    
+      {
+        loggedInUser ?
+        <div>
+          {
+            loggedInUser.role === 'admin' &&
+            <p>
+              <Link to={'/user/adminPanel'}>Admin Panel</Link>
+            </p>
+          }
+          <p>
+            <Link to={`/user/${loggedInUser.userName}`}>{loggedInUser.userName}</Link>
+          </p>
+          <button
+            onClick={() => {
+              setLoggedInUser(false);
+              navigate('/');
+            }}
+          >Log Out</button>
+        </div> : 
+        <nav>
+          <ul>
+            <li>
+              <NavLink to='/user/register'>Sign up</NavLink>
+            </li>
+            <li>
+              <NavLink to='/user/login'>Login</NavLink>
+            </li>
+          </ul>
+        </nav>
+      }
     </StyledHeader>
   );
 }
