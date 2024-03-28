@@ -25,9 +25,10 @@ const StyledSection = styled.section`
   button {
     padding: 10px 20px;
     font-size: 20px;
-    background-color: #707770;
+    background-color: #aaaaaa;
     color: white;
     border: none;
+    box-shadow: 5px 1px 20px rgba(173, 173, 178, 0.5);
     border-radius: 10px;
     cursor: pointer;
   

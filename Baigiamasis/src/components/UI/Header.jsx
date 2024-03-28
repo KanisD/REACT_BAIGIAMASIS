@@ -11,8 +11,7 @@ const StyledHeader = styled.header`
   background-color: #e6e6e6;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px; 
-
-
+  box-shadow: 0px 0px 20px rgba(173, 173, 178, 0.5);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,7 +84,7 @@ const Header = () => {
             <NavLink to='/'>Home</NavLink>
           </li>
           <li>
-            <NavLink to='/cards/allCards'>Cards</NavLink>
+            <NavLink to='/cards/allCards'>Projects</NavLink>
           </li>
         </ul>
       </nav>

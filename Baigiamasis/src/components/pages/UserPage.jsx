@@ -6,64 +6,62 @@ import Card from "../UI/Card";
 import styled from "styled-components";
 
 const StyledSection = styled.section`
-  > h1{
-    text-align: center;
-  }
-  > p {
-    text-align: center;
+  text-align: center;
 
-    > a{
-      text-decoration: none;
-      padding: 5px 12px;
-      border: 1px solid black;
-      border-radius: 10px 5px;
-      transition: 0.3s;
-    }
-    > a:hover{
-      box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-    }
+  > h1 {
+    margin-bottom: 20px;
   }
-  > div{
-    margin: 0 auto;
-    width: 80%;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
+
+  > .addProjectLink {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: #333;
+    font-weight: bold;
   }
-  > p:last-child{
-    padding-top: 50px;
-    font-size: 3rem;
+
+  > .addProjectLink:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  > .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
   }
 `;
 
 const UserPage = () => {
-
   const { cards } = useContext(CardsContext);
   const { loggedInUser } = useContext(UsersContext);
   const location = useLocation();
-  const userCards = cards.filter(card => card.userId === loggedInUser.id);
+  const userCards = cards.filter((card) => card.userId === loggedInUser.id);
 
   return (
     <StyledSection>
-      <h1>All {loggedInUser.userName} Cards</h1>
-      <p><Link to="/cards/addNew">Add New Card</Link></p>
-      {
-        userCards.length ?
-        <div>
-          {
-            userCards.map(card => 
-              <Card
-                key={card.id}
-                data={card}
-                location={location}
-              />
-            )
-          }
-        </div> :
-        <p>You have yet to create any cards...</p>
-      }
+      <h1>All {loggedInUser.userName} Projects</h1>
+      <Link to="/cards/addNew" className="addProjectLink">
+        Add New Project
+      </Link>
+      <div className="cardContainer">
+        {userCards.length ? (
+          userCards.map((card) => (
+            <Card key={card.id} data={card} location={location} />
+          ))
+        ) : (
+          <p>You have yet to create any projects...</p>
+        )}
+      </div>
     </StyledSection>
   );
-}
- 
+};
+
 export default UserPage;
