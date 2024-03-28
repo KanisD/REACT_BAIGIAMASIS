@@ -18,9 +18,10 @@ const StyledFooter = styled.footer`
     align-items: center;
 
     > a{
-      height: 100%;
+      height:100px;
+      margin-right: 20px;
       > img{
-        height: 100%;
+        height: 80%;
       }
     }
   }
@@ -55,11 +56,11 @@ const Footer = () => {
       <div>
         <Link to='/'>
           <img
-            src="https://i.postimg.cc/phzTmgwZ/1.png" 
+            src="https://seeklogo.com/images/E/ethereum-logo-DE26DD608D-seeklogo.com.png" 
             alt="logo"
           />
         </Link>
-        <p> &copy; 2024</p>
+        <p> &copy; 2024 Deividukas holdings</p>
       </div>
       <ul>
         <li>Legal</li>

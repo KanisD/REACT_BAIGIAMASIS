@@ -13,6 +13,13 @@
       "password": "$2a$08$JaE5iIWUT5zrfEt6I7ia0.LCHc7/myhs9GOT1Cjqw7Oy/DEuF62PO",
       "passwordNoHash": "Zxcsqwe1!",
       "role": "user"
+    },
+    {
+      "id": "6aef4f3b-9df9-4a44-b465-b339ab74bc86",
+      "userName": "TavoTevas",
+      "password": "$2a$08$Whrg0Y3lFo2/WmPZBu.p6u/vfYRCMG4bz3EXtApgqJNNXOSXJSoEm",
+      "passwordNoHash": "Zxcsqwe1!",
+      "role": "user"
     }
   ]
 }

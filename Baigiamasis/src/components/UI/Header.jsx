@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
   align-items: center;
   
   > div:nth-child(1){
-    height: 150px;
+    height: 50px;
     
     > a{
       > img{
@@ -73,7 +73,7 @@ const Header = () => {
       <div>
       <Link to='/'>
   <img
-   src="https://i.postimg.cc/phzTmgwZ/1.png" 
+   src='https://seeklogo.com/images/E/ethereum-logo-DE26DD608D-seeklogo.com.png'
    alt="logo"
   />
     </Link>
