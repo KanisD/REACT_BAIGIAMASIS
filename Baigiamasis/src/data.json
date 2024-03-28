@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "0",
+      "userName": "MrAdmin",
+      "password": "$2a$08$adKDmja0RQamK08GpqX1eugwnxRXiwc7sB0dI/gb5sTyQTQTBqUg6",
+      "passwordNoHash": "darNeHashintas0",
+      "role": "admin"
+    },
+    {
+      "id": "a9497359-9d19-49c4-b4d4-bea60a0b99b0",
+      "userName": "zxcsqwe",
+      "password": "$2a$08$JaE5iIWUT5zrfEt6I7ia0.LCHc7/myhs9GOT1Cjqw7Oy/DEuF62PO",
+      "passwordNoHash": "Zxcsqwe1!",
+      "role": "user"
+    },
+    {
+      "id": "6aef4f3b-9df9-4a44-b465-b339ab74bc86",
+      "userName": "TavoTevas",
+      "password": "$2a$08$Whrg0Y3lFo2/WmPZBu.p6u/vfYRCMG4bz3EXtApgqJNNXOSXJSoEm",
+      "passwordNoHash": "Zxcsqwe1!",
+      "role": "user"
+    }
+  ]
+}
